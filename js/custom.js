@@ -42,8 +42,6 @@ screenDesktopeSize.addListener(desktopSize)
 
 
 
-
-
 var x, i, j, l, ll, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
 x = document.getElementsByClassName("custom-select");
