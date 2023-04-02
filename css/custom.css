@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url("/fonts/IRANSansWeb.eot");
+    src: url("/fonts/IRANSansWeb_Bold.eot") format("eot");
+    src: url("/fonts/IRANSansWeb_Light.eot") format("eot");
+    src: url("/fonts/IRANSansWeb_UltraLight.eot") format("eot");
+    src: url("/fonts/IRANSansWeb_Medium.eot") format("eot");
+}
+
+@font-face {
+    font-family: "iranYekan";
+    src: url("/fonts/iranyekanwebbold(fanum).eot");
+    src: url("/fonts/iranyekanweblight(fanum).eot") format("eot");
+    src: url("/fonts/iranyekanwebregular(fanum).eot") format("eot");
+}
+
+body, p, h1, h2, h3, h4, h5, h6, span, ul, li {
+    direction: rtl;
+    padding: 0;
+    font-family: IRANSansWeb, iranYekan, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.headerStyle {
+    height: 60px;
+}
+
+.btnStyle {
+    background-color: #E7280B;
+    color: white;
+    border-radius: 25px;
+    height: 36px;
+    width: 100px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+ul {
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbarMobile {
+    width: 90%;
+    border: 1px solid grey;
+    font-size: small;
+    padding: 15px;
+}
+
+li {
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.mobileMenu {
+    position: absolute;
+    width: 80%;
+    right: 0;
+    top: 60px;
+    font-size: small;
+    display: none;
+}
+
+.backgroundBanner {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    background-position: center;
+}
+
+.backgroundBanner .transparent {
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 360px;
+
+}
+
+.titleBanner {
+    height: 50%;
+    text-align: center;
+    padding: 60px 0;
+    line-height: 60px;
+}
+
+.titleBanner h1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.titleBanner span {
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+
+.searchBar {
+    height: 50%;
+    text-align: center;
+    padding: 60px 0;
+
+}
+
+.holderSearchBox {
+    font-size: small;
+    height: auto;
+    border-radius: 17px;
+    background-color: rgba(232, 232, 232, 0.6);
+    color: white;
+    width: 75%;
+    text-align: center;
+}
+
+.holderSearchBox div {
+    margin: auto;
+    padding: 1px;
+}
+
+.btnSearch {
+    width: 100px;
+    height: 32px;
+    margin: 5px 0;
+    background-color: #E7280B;
+    color: white;
+    border-radius: 25px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.selectTour {
+    width: 80%;
+    height: 90%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid rgba(232, 232, 232, 0.6);
+}
+
+.selectTour:focus-visible {
+    border: none;
+    outline: none;
+    outline-color: transparent;
+}
+
+.selectTour option {
+    color: black;
+    background-color: rgba(232, 232, 232, 0.6);
+}
+
+.custom-select {
+    position: relative;
+    border-bottom: 1px solid transparent;
+    width: 80%;
+    text-align: center;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    text-align: right;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: rgba(232, 232, 232, 0.6);
+    left: 0;
+    right: 0;
+    z-index: 99;
+    top: 41px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
