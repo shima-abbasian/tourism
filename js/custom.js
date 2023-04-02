@@ -6,8 +6,8 @@ showHideMenuMobile.addEventListener('click',function (){
 });
 
 //**************** responsive navbar menu******************//
-let screenMobileSize = window.matchMedia("(max-width: 600px)")
-let screenDesktopeSize = window.matchMedia("(min-width: 600px)")
+let screenMobileSize = window.matchMedia("(max-width: 768px)")
+let screenDesktopeSize = window.matchMedia("(min-width: 768px)")
 let mobileScreen = document.querySelector('.mobileScreen')
 let desktopScreen  = document.querySelector('.desktopScreen')
 
