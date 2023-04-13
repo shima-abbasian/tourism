@@ -1,3 +1,6 @@
+
+
+
 let showHideMenuMobile = document.querySelector(".fa-navicon")
 let mobileMenu = document.querySelector('.mobileMenu')
 
@@ -126,16 +129,47 @@ document.addEventListener("click", closeAllSelect);
 
 //hover card
 let holderDetailsImg= document.querySelectorAll('.holderDetailsImg')
-let coverGradient= document.querySelectorAll('.coverGradient')
-let infoImg= document.querySelectorAll('.infoImg')
-
 
 holderDetailsImg.forEach(function (holderDetailsImg){
     holderDetailsImg.addEventListener("mouseover", mouseOver);
     function mouseOver() {
-        alert('hi')
-        coverGradient.classList.remove('d-none')
-        infoImg.classList.remove('d-none')
+        let coverGradient= this.querySelector('.coverGradient')
+        let infoImg= this.querySelector('.infoImg')
+            coverGradient.classList.remove('d-none');
+            infoImg.classList.remove('d-none');
+    }
+
+    holderDetailsImg.addEventListener("mouseout", mouseout);
+    function mouseout() {
+        let coverGradient= this.querySelector('.coverGradient')
+        let infoImg= this.querySelector('.infoImg')
+        coverGradient.classList.add('d-none');
+        infoImg.classList.add('d-none');
+    }
+})
+
+//counter
+
+
+
+
+let scrollCounter = 1000;
+console.log(scrollCounter)
+window.addEventListener("scroll",function(){
+    if(document.documentElement.scrollTop === 0){
+        //alert("Window scroll is at the top")
+    }
+    if(document.documentElement.scrollTop === 1000){
+        //console.log("Window scroll is at the bottom")
+        let counts=setInterval(updated);
+        let upto=0;
+        function updated(){
+            var count= document.getElementById("counter");
+            count.innerHTML=++upto;
+            if(upto===1000) {
+                clearInterval(counts);
+            }
+        }
     }
 })
 

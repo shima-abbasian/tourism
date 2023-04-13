@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37dc5424-306e-4d9f-a086-aaeb28460eb7" name="Changes" comment="add banner and search box html, css and js -part2-">
+    <list default="true" id="37dc5424-306e-4d9f-a086-aaeb28460eb7" name="Changes" comment="add js to cart place(hover cards)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -58,7 +58,9 @@
       <updated>1679926360068</updated>
       <workItem from="1679926361686" duration="77155000" />
       <workItem from="1681304555603" duration="16033000" />
-      <workItem from="1681376414227" duration="13931000" />
+      <workItem from="1681376414227" duration="14056000" />
+      <workItem from="1681395874695" duration="15138000" />
+      <workItem from="1681420111928" duration="7213000" />
     </task>
     <task id="LOCAL-00001" summary="add banner and search box html, css and js">
       <created>1680461191328</created>
@@ -88,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680467963255</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add js to cart place(hover cards)">
+      <created>1681395804591</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681395804591</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +118,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add banner and search box html, css and js" />
     <MESSAGE value="add banner and search box html, css and js -part2-" />
-    <option name="LAST_COMMIT_MESSAGE" value="add banner and search box html, css and js -part2-" />
+    <MESSAGE value="add js to cart place(hover cards)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add js to cart place(hover cards)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

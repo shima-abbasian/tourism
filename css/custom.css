@@ -278,7 +278,7 @@ li {
     height: 40px;
     background-color: #e1ad00;
     color: white;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
     border-radius: 50px;
     position: absolute;
@@ -368,6 +368,50 @@ div .badgesStar {
     background-image: linear-gradient(#ffffff00, #212529);
 }
 
+.counterBackground {
+    background-image: url("../img/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+.counterGrayShadow {
+    background-color: rgba(0, 0, 0, 0.41);
+    width: 100%;
+    height: 300px;
+}
+
+.counterTitle {
+    text-align: center;
+    color: white;
+    padding: 60px 0;
+}
+
+.counterTitle p {
+    overflow-wrap: anywhere;
+    width: 80%;
+    margin: 20px auto;
+    font-size: small;
+}
+
+.numCounter {
+    font-size: 55px;
+    font-weight: bolder;
+    font-family:'IRANSansWeb';
+}
+
+.counterTitle div {
+    margin-top: 20px;
+}
+
+.counterTitle button {
+    width: 300px;
+}
+
+
 @media only screen and (max-width: 768px) {
     .holderSearchBox .col-12:first-child {
         margin-top: 10px;
@@ -390,6 +434,24 @@ div .badgesStar {
 
     .circleHolderImg img {
         width: 80px;
+    }
+    .counterTitle{
+        text-align: center;
+        color: white;
+        padding: 30px 0;
+    }
+    .counterTitle button {
+        margin: 5px 0;
+    }
+    .numCounter{
+        font-size: 30px;
+    }
+
+    .counterBackground,.counterGrayShadow{
+        height: 280px;
+    }
+    .titleBanner{
+        height: 40%;
     }
 }
 
