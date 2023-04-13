@@ -13,9 +13,11 @@
     src: url("/fonts/iranyekanweblight(fanum).eot") format("eot");
     src: url("/fonts/iranyekanwebregular(fanum).eot") format("eot");
 }
-.row{
-    --bs-gutter-x:0;
+
+.row {
+    --bs-gutter-x: 0;
 }
+
 body, p, h1, h2, h3, h4, h5, h6, span, ul, li {
     direction: rtl;
     padding: 0;
@@ -196,7 +198,7 @@ li {
     top: 7px;
 }
 
-.select-items div,.select-selected {
+.select-items div, .select-selected {
     color: #ffffff;
     padding: 8px 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
@@ -219,27 +221,30 @@ li {
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.6);
 }
-.circleHolderImg{
+
+.circleHolderImg {
     padding: 25px 0;
 }
-.circleHolderImg img{
-    width:65px;
+
+.circleHolderImg img {
+    width: 65px;
     text-align: center;
     box-shadow: -4px 4px 1px 1px darkred;
 }
-.circleHolderImg .paddingRight{
+
+.circleHolderImg .paddingRight {
     padding-right: 100px;
     padding-top: 30px;
 }
 
-.circleHolderImg .paddingLeft{
+.circleHolderImg .paddingLeft {
     padding-left: 100px;
     padding-top: 30px;
 
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 330px;
     height: auto;
@@ -248,22 +253,27 @@ li {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
 }
-.holderCard{
+
+.holderCard {
     justify-content: space-between;
     margin: 0 auto;
     width: 80%;
+
 }
 
-.holderCard img{
-    height: 200px;
+.holderCard img {
+    width: 100%;
+    height: 220px;
     padding: 5px;
+
 }
-.badges{
+
+.badges {
     width: 40px;
     height: 40px;
     background-color: #e1ad00;
@@ -275,24 +285,100 @@ li {
     bottom: 15px;
     right: 10px;
 }
+
 .captionCard {
     width: auto;
     margin: 10px 55px;
+    text-align: right;
     /*white-space: nowrap;*/
     /*overflow: hidden;*/
     /*text-overflow: ellipsis;*/
 }
 
+.holderDetailsImg {
+    width: 100%;
+    height: 220px;
 
-@media only screen and (max-width: 768px){
-.holderSearchBox .col-12:first-child{
-    margin-top: 10px;
 }
+
+.badgesLike {
+    width: 35px;
+    height: 35px;
+    background-color: #ff0000;
+    color: white;
+    padding: 9px;
+    text-align: center;
+    border-radius: 50px;
+    position: absolute;
+    left: 15px;
+    bottom: 90px;
+}
+
+.titleDetailesImg {
+    color: white;
+    font-size: smaller;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    bottom: 80px;
+}
+
+.descriptionDetailesImg {
+    color: white;
+    font-size: smaller;
+    font-weight: normal;
+    position: absolute;
+    right: 10px;
+    bottom: 60px;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.badgesTags {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(221 217 217 / 83%);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    left: 15px;
+    font-size: small;
+    bottom: 120px;
+    right: 10px;
+}
+
+div .badgesStar {
+    position: absolute;
+    bottom: 125px;
+    left: 10px;
+    font-size: small;
+    color: #ffc400;
+}
+
+.coverGradient {
+    height: 210px;
+    width: 97%;
+    position: absolute;
+    opacity: 0.8;
+    margin: 5px;
+    background-image: linear-gradient(#ffffff00, #212529);
+}
+
+@media only screen and (max-width: 768px) {
+    .holderSearchBox .col-12:first-child {
+        margin-top: 10px;
+    }
+
     .select-items {
         top: 22px;
         background-color: rgb(168, 167, 177);
     }
-    .circleHolderImg .paddingRight{
+
+    .circleHolderImg .paddingRight {
         padding: 30PX 35PX 0 35px;
         justify-content: space-around;
     }
@@ -301,8 +387,9 @@ li {
         padding: 30PX 35PX 0 35px;
         justify-content: space-around;
     }
-    .circleHolderImg img{
-            width: 80px;
+
+    .circleHolderImg img {
+        width: 80px;
     }
 }
 

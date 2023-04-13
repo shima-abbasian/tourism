@@ -122,3 +122,20 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+
+//hover card
+let holderDetailsImg= document.querySelectorAll('.holderDetailsImg')
+let coverGradient= document.querySelectorAll('.coverGradient')
+let infoImg= document.querySelectorAll('.infoImg')
+
+
+holderDetailsImg.forEach(function (holderDetailsImg){
+    holderDetailsImg.addEventListener("mouseover", mouseOver);
+    function mouseOver() {
+        alert('hi')
+        coverGradient.classList.remove('d-none')
+        infoImg.classList.remove('d-none')
+    }
+})
+
