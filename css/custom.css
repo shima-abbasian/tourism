@@ -410,6 +410,25 @@ div .badgesStar {
 .counterTitle button {
     width: 300px;
 }
+.underline{
+    width: 30px;
+    height: 2px;
+    background-color: #ff0000;
+    border-radius: 3px;
+    margin: -12px 0 45px 0;
+}
+
+.cart-aboutPlace img{
+    height: 200px;
+    width: 100%;
+}
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 768px) {
