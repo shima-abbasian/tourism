@@ -400,7 +400,7 @@ div .badgesStar {
 .numCounter {
     font-size: 55px;
     font-weight: bolder;
-    font-family:'IRANSansWeb';
+    font-family: 'IRANSansWeb';
 }
 
 .counterTitle div {
@@ -410,7 +410,8 @@ div .badgesStar {
 .counterTitle button {
     width: 300px;
 }
-.underline{
+
+.underline {
     width: 30px;
     height: 2px;
     background-color: #ff0000;
@@ -418,11 +419,50 @@ div .badgesStar {
     margin: -12px 0 45px 0;
 }
 
-.cart-aboutPlace img{
+.cart-aboutPlace img {
     height: 200px;
     width: 100%;
 }
 
+.newsLetter {
+    background-color: #F8F9FA;
+}
+
+.emailSubmit {
+    width: 100px;
+    height: 35px;
+    background-color: #E7280B;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.newsLetter input {
+    border: 1px solid rgba(217, 217, 217, 0.6);
+    border-left: none;
+    height: 36px;
+    width: 250px;
+    padding: 5px 10px;
+}
+
+.newsLetter input:focus-visible {
+    border: 1px solid #d9d9d9;
+    outline: none;
+}
+.detailsSite div{
+    text-align: center;
+
+}
+.detailsSite i{
+    margin: 0 0 20px 0;
+    font-size: xx-large;
+    color: #E7280B;
+}
+.detailsSite div p:last-child{
+    color: #E7280B;
+    font-size: large;
+    font-weight: bold;
+}
 
 
 
@@ -454,23 +494,36 @@ div .badgesStar {
     .circleHolderImg img {
         width: 80px;
     }
-    .counterTitle{
+
+    .counterTitle {
         text-align: center;
         color: white;
         padding: 30px 0;
     }
+
     .counterTitle button {
         margin: 5px 0;
     }
-    .numCounter{
+
+    .numCounter {
         font-size: 30px;
     }
 
-    .counterBackground,.counterGrayShadow{
+    .counterBackground, .counterGrayShadow {
         height: 280px;
     }
-    .titleBanner{
+
+    .titleBanner {
         height: 40%;
+    }
+
+    .newsLetter input {
+        width: 60%;
+    }
+
+    .detailsSite div {
+        margin: 0 auto;
+        text-align: center;
     }
 }
 

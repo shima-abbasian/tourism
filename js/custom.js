@@ -146,10 +146,6 @@ holderDetailsImg.forEach(function (holderDetailsImg){
 })
 
 //counter
-
-
-
-
 let scrollCounter = 1000;
 console.log(scrollCounter)
 window.addEventListener("scroll",function(){
@@ -170,3 +166,24 @@ window.addEventListener("scroll",function(){
     }
 })
 
+
+//newsLetter counter
+// let scrollCounter = 1400;
+// console.log(scrollCounter)
+// window.addEventListener("scroll",function(){
+//     if(document.documentElement.scrollTop === 0){
+//         //alert("Window scroll is at the top")
+//     }
+//     if(document.documentElement.scrollTop === 1400){
+//         //console.log("Window scroll is at the bottom")
+//         let counts=setInterval(updated);
+//         let upto=0;
+//         function updated(){
+//             var count= document.getElementsByClassName("userCounter");
+//             count.innerHTML=++upto;
+//             if(upto===1000) {
+//                 clearInterval(counts);
+//             }
+//         }
+//     }
+// })
