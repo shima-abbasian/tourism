@@ -13,7 +13,9 @@
     src: url("/fonts/iranyekanweblight(fanum).eot") format("eot");
     src: url("/fonts/iranyekanwebregular(fanum).eot") format("eot");
 }
-
+:root{
+    scroll-behavior: smooth;
+}
 .row {
     --bs-gutter-x: 0;
 }
@@ -463,6 +465,51 @@ div .badgesStar {
     font-size: large;
     font-weight: bold;
 }
+.holder-footer{
+    background-color: #2c3034;
+    color: #a7a8b1;
+    font-size: 14px;
+}
+.holder-footer .title{
+    color: #dedede;
+    font-size: 16px;
+    font-weight: bold;
+}
+.holder-footer .underline{
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #c2c2c2;
+    border-radius: 3px;
+}
+
+.holder-footer .badgesStar{
+    position: relative;
+    top: 28px;
+    left: 64px;
+    font-size: x-small;
+    color: #ffc400;
+}
+.holder-footer .footer img{
+    width: 55px;
+    height: 45px;
+    border-radius: 4px;
+}
+.holder-footer .d-flex p{
+    font-size: 12px;
+    position: relative;
+    right: 9px;
+}
+
+.comment-badgeStar{
+    font-size: 12px;
+    position: relative;
+    top: 9px;
+    right: 9px;
+}
+
+
+
 
 
 

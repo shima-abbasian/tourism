@@ -153,7 +153,7 @@ window.addEventListener("scroll",function(){
         //alert("Window scroll is at the top")
     }
     if(document.documentElement.scrollTop === 1000){
-        //console.log("Window scroll is at the bottom")
+        console.log("Window scroll is at the bottom")
         let counts=setInterval(updated);
         let upto=0;
         function updated(){
@@ -161,6 +161,48 @@ window.addEventListener("scroll",function(){
             count.innerHTML=++upto;
             if(upto===1000) {
                 clearInterval(counts);
+            }
+        }
+    }
+})
+
+
+let scrollCount = 2100;
+console.log(scrollCount)
+window.addEventListener("scroll",function() {
+
+    if (document.documentElement.scrollTop === 2100) {
+        console.log("Window scroll is at the bottom")
+
+        let usersCountuser = setInterval(updateduser);
+        let uptouser = 0;
+
+        function updateduser() {
+            let count = document.getElementById("userCounter");
+            count.innerHTML = ++uptouser;
+            if (uptouser === 1729) {
+                clearInterval(usersCountuser);
+            }
+        }
+
+
+        let tourcounter = setInterval(updatedtour);
+        let uptotour = 0;
+        function updatedtour() {
+            let count = document.getElementById("tourNumber");
+            count.innerHTML = ++uptotour;
+            if (uptotour === 1356) {
+                clearInterval(tourcounter);
+            }
+        }
+
+        let leadercounter = setInterval(updatedleader);
+        let uptoleader = 0;
+        function updatedleader() {
+            let count = document.getElementById("leader");
+            count.innerHTML = ++uptoleader;
+            if (uptoleader === 136) {
+                clearInterval(leadercounter);
             }
         }
     }
