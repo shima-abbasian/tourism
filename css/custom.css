@@ -13,9 +13,11 @@
     src: url("/fonts/iranyekanweblight(fanum).eot") format("eot");
     src: url("/fonts/iranyekanwebregular(fanum).eot") format("eot");
 }
-:root{
+
+:root {
     scroll-behavior: smooth;
 }
+
 .row {
     --bs-gutter-x: 0;
 }
@@ -40,7 +42,10 @@ body, p, h1, h2, h3, h4, h5, h6, span, ul, li {
     border-style: none;
     cursor: pointer;
 }
+.btnStyle:hover{
+    background-color: #ff3517;
 
+}
 .logo {
     height: 40px;
     width: auto;
@@ -148,7 +153,10 @@ li {
     border-style: none;
     cursor: pointer;
 }
+.btnSearch:hover{
+    background-color: #ff3517;
 
+}
 .selectTour {
     width: 80%;
     height: 90%;
@@ -209,7 +217,7 @@ li {
 
 .select-items {
     position: absolute;
-    background-color: rgba(232, 232, 232, 0.6);
+    background-color: rgb(187, 186, 188, 0.95);
     left: 0;
     right: 0;
     z-index: 99;
@@ -232,6 +240,7 @@ li {
     width: 65px;
     text-align: center;
     box-shadow: -4px 4px 1px 1px darkred;
+    cursor: pointer;
 }
 
 .circleHolderImg .paddingRight {
@@ -300,7 +309,7 @@ li {
 .holderDetailsImg {
     width: 100%;
     height: 220px;
-
+cursor: pointer;
 }
 
 .badgesLike {
@@ -314,8 +323,11 @@ li {
     position: absolute;
     left: 15px;
     bottom: 90px;
+    cursor: pointer;
 }
-
+.badgesLike:hover{
+    background-color: #ff3517;
+}
 .titleDetailesImg {
     color: white;
     font-size: smaller;
@@ -351,6 +363,10 @@ li {
     font-size: small;
     bottom: 120px;
     right: 10px;
+}
+.badgesTags:hover{
+    background-color: rgba(221, 217, 217, 0.59);
+
 }
 
 div .badgesStar {
@@ -451,31 +467,37 @@ div .badgesStar {
     border: 1px solid #d9d9d9;
     outline: none;
 }
-.detailsSite div{
+
+.detailsSite div {
     text-align: center;
 
 }
-.detailsSite i{
+
+.detailsSite i {
     margin: 0 0 20px 0;
     font-size: xx-large;
     color: #E7280B;
 }
-.detailsSite div p:last-child{
+
+.detailsSite div p:last-child {
     color: #E7280B;
     font-size: large;
     font-weight: bold;
 }
-.holder-footer{
+
+.holder-footer {
     background-color: #2c3034;
     color: #a7a8b1;
     font-size: 14px;
 }
-.holder-footer .title{
+
+.holder-footer .title {
     color: #dedede;
     font-size: 16px;
     font-weight: bold;
 }
-.holder-footer .underline{
+
+.holder-footer .underline {
     display: block;
     width: 30px;
     height: 1px;
@@ -483,40 +505,61 @@ div .badgesStar {
     border-radius: 3px;
 }
 
-.holder-footer .badgesStar{
+.holder-footer .badgesStar {
     position: relative;
     top: 28px;
     left: 64px;
     font-size: x-small;
     color: #ffc400;
 }
-.holder-footer .footer img{
+
+.holder-footer .footer img {
     width: 55px;
     height: 45px;
     border-radius: 4px;
 }
-.holder-footer .d-flex p{
+
+.holder-footer .d-flex p {
     font-size: 12px;
     position: relative;
     right: 9px;
 }
 
-.comment-badgeStar{
+.comment-badgeStar {
     font-size: 12px;
     position: relative;
     top: 9px;
     right: 9px;
 }
 
+.footer .leader img {
+    width: 65px;
+    height: 65px;
+    border-radius: 0;
+    cursor: pointer;
+}
 
+.footer .socialMedia i {
+    background-color: rgba(199, 199, 199, 0.18);
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    text-align: center;
+    cursor: pointer;
+}
 
+.footer .socialMedia i:hover {
+    background-color: rgba(199, 199, 199, 0.24);
 
+}
 
-
-
-
-
-
+.footer .socialMedia .fa {
+    padding: 1.5%;
+}
+.holder-footer .fa-heart{
+    color: red;
+}
 
 @media only screen and (max-width: 768px) {
     .holderSearchBox .col-12:first-child {
@@ -540,6 +583,7 @@ div .badgesStar {
 
     .circleHolderImg img {
         width: 80px;
+        cursor: pointer;
     }
 
     .counterTitle {

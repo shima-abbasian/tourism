@@ -1,48 +1,40 @@
-
-
-
 let showHideMenuMobile = document.querySelector(".fa-navicon")
 let mobileMenu = document.querySelector('.mobileMenu')
 
-showHideMenuMobile.addEventListener('click',function (){
-        mobileMenu.classList.toggle("mobileMenu")
+showHideMenuMobile.addEventListener('click', function () {
+    mobileMenu.classList.toggle("mobileMenu")
 });
 
 //**************** responsive navbar menu******************//
 let screenMobileSize = window.matchMedia("(max-width: 768px)")
 let screenDesktopeSize = window.matchMedia("(min-width: 768px)")
 let mobileScreen = document.querySelector('.mobileScreen')
-let desktopScreen  = document.querySelector('.desktopScreen')
+let desktopScreen = document.querySelector('.desktopScreen')
 
- function mobileSize(screenMobileSize){
-        if(screenMobileSize.matches){
-                mobileScreen.classList.remove('d-none')
-                desktopScreen.classList.add('d-none')
-        }else {
-                desktopScreen.classList.remove(".d-none")
-                mobileScreen.classList.add(".d-none")
-        }
- }
-function desktopSize(screenDesktopeSize){
-        if(screenDesktopeSize.matches){
-                mobileScreen.classList.add('d-none')
-                desktopScreen.classList.remove('d-none')
-        }else {
-                desktopScreen.classList.add(".d-none")
-                mobileScreen.classList.remove(".d-none")
-        }
+function mobileSize(screenMobileSize) {
+    if (screenMobileSize.matches) {
+        mobileScreen.classList.remove('d-none')
+        desktopScreen.classList.add('d-none')
+    } else {
+        desktopScreen.classList.remove(".d-none")
+        mobileScreen.classList.add(".d-none")
+    }
 }
+
+function desktopSize(screenDesktopeSize) {
+    if (screenDesktopeSize.matches) {
+        mobileScreen.classList.add('d-none')
+        desktopScreen.classList.remove('d-none')
+    } else {
+        desktopScreen.classList.add(".d-none")
+        mobileScreen.classList.remove(".d-none")
+    }
+}
+
 mobileSize(screenMobileSize)
 screenMobileSize.addListener(mobileSize)
 desktopSize(screenDesktopeSize)
 screenDesktopeSize.addListener(desktopSize)
-
-
-
-
-
-
-
 
 
 var x, i, j, l, ll, selElmnt, a, b, c;
@@ -65,7 +57,7 @@ for (i = 0; i < l; i++) {
         create a new DIV that will act as an option item: */
         c = document.createElement("DIV");
         c.innerHTML = selElmnt.options[j].innerHTML;
-        c.addEventListener("click", function(e) {
+        c.addEventListener("click", function (e) {
             /* When an item is clicked, update the original select box,
             and the selected item: */
             var y, i, k, s, h, sl, yl;
@@ -90,7 +82,7 @@ for (i = 0; i < l; i++) {
         b.appendChild(c);
     }
     x[i].appendChild(b);
-    a.addEventListener("click", function(e) {
+    a.addEventListener("click", function (e) {
         /* When the select box is clicked, close any other select boxes,
         and open/close the current select box: */
         e.stopPropagation();
@@ -121,25 +113,28 @@ function closeAllSelect(elmnt) {
         }
     }
 }
+
 document.addEventListener("click", closeAllSelect);
 
 
 //hover card
-let holderDetailsImg= document.querySelectorAll('.holderDetailsImg')
+let holderDetailsImg = document.querySelectorAll('.holderDetailsImg')
 
-holderDetailsImg.forEach(function (holderDetailsImg){
+holderDetailsImg.forEach(function (holderDetailsImg) {
     holderDetailsImg.addEventListener("mouseover", mouseOver);
+
     function mouseOver() {
-        let coverGradient= this.querySelector('.coverGradient')
-        let infoImg= this.querySelector('.infoImg')
-            coverGradient.classList.remove('d-none');
-            infoImg.classList.remove('d-none');
+        let coverGradient = this.querySelector('.coverGradient')
+        let infoImg = this.querySelector('.infoImg')
+        coverGradient.classList.remove('d-none');
+        infoImg.classList.remove('d-none');
     }
 
     holderDetailsImg.addEventListener("mouseout", mouseout);
+
     function mouseout() {
-        let coverGradient= this.querySelector('.coverGradient')
-        let infoImg= this.querySelector('.infoImg')
+        let coverGradient = this.querySelector('.coverGradient')
+        let infoImg = this.querySelector('.infoImg')
         coverGradient.classList.add('d-none');
         infoImg.classList.add('d-none');
     }
@@ -148,18 +143,19 @@ holderDetailsImg.forEach(function (holderDetailsImg){
 //counter
 let scrollCounter = 1000;
 console.log(scrollCounter)
-window.addEventListener("scroll",function(){
-    if(document.documentElement.scrollTop === 0){
+window.addEventListener("scroll", function () {
+    if (document.documentElement.scrollTop === 0) {
         //alert("Window scroll is at the top")
     }
-    if(document.documentElement.scrollTop === 1000){
+    if (document.documentElement.scrollTop === 1000) {
         console.log("Window scroll is at the bottom")
-        let counts=setInterval(updated);
-        let upto=0;
-        function updated(){
-            var count= document.getElementById("counter");
-            count.innerHTML=++upto;
-            if(upto===1000) {
+        let counts = setInterval(updated);
+        let upto = 0;
+
+        function updated() {
+            var count = document.getElementById("counter");
+            count.innerHTML = ++upto;
+            if (upto === 1000) {
                 clearInterval(counts);
             }
         }
@@ -169,7 +165,7 @@ window.addEventListener("scroll",function(){
 
 let scrollCount = 2100;
 console.log(scrollCount)
-window.addEventListener("scroll",function() {
+window.addEventListener("scroll", function () {
 
     if (document.documentElement.scrollTop === 2100) {
         console.log("Window scroll is at the bottom")
@@ -188,6 +184,7 @@ window.addEventListener("scroll",function() {
 
         let tourcounter = setInterval(updatedtour);
         let uptotour = 0;
+
         function updatedtour() {
             let count = document.getElementById("tourNumber");
             count.innerHTML = ++uptotour;
@@ -198,6 +195,7 @@ window.addEventListener("scroll",function() {
 
         let leadercounter = setInterval(updatedleader);
         let uptoleader = 0;
+
         function updatedleader() {
             let count = document.getElementById("leader");
             count.innerHTML = ++uptoleader;
@@ -209,23 +207,43 @@ window.addEventListener("scroll",function() {
 })
 
 
-//newsLetter counter
-// let scrollCounter = 1400;
-// console.log(scrollCounter)
-// window.addEventListener("scroll",function(){
-//     if(document.documentElement.scrollTop === 0){
-//         //alert("Window scroll is at the top")
+
+
+
+
+//like and dislike
+let fahearto = document.querySelector(".fa-heart-o")
+let faheart = document.querySelector(".fa-heart")
+
+document.querySelector('.fa-heart-o').addEventListener('click', likeheart)
+function likeheart() {
+        faheart.classList.remove('d-none');
+         fahearto.classList.add('d-none');
+}
+
+document.querySelector('.fa-heart').addEventListener('click', dislikeheart)
+function dislikeheart() {
+    fahearto.classList.remove('d-none');
+    faheart.classList.add('d-none');
+}
+
+
+
+//
+// let fahearto = document.querySelectorAll(".fa-heart-o")
+// fahearto.forEach(function (fahearto){
+//     fahearto.addEventListener("click", likeheart)
+//     function likeheart() {
+//         faheart.classList.remove('d-none');
+//         fahearto.classList.add('d-none');
 //     }
-//     if(document.documentElement.scrollTop === 1400){
-//         //console.log("Window scroll is at the bottom")
-//         let counts=setInterval(updated);
-//         let upto=0;
-//         function updated(){
-//             var count= document.getElementsByClassName("userCounter");
-//             count.innerHTML=++upto;
-//             if(upto===1000) {
-//                 clearInterval(counts);
-//             }
-//         }
+// })
+//
+// let faheart = document.querySelector(".fa-heart")
+// fahearto.forEach(function (faheart){
+//     faheart.addEventListener("click", dislikeheart)
+//     function dislikeheart() {
+//         fahearto.classList.remove('d-none');
+//         faheart.classList.add('d-none');
 //     }
 // })
