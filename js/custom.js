@@ -119,7 +119,6 @@ document.addEventListener("click", closeAllSelect);
 
 //hover card
 let holderDetailsImg = document.querySelectorAll('.holderDetailsImg')
-
 holderDetailsImg.forEach(function (holderDetailsImg) {
     holderDetailsImg.addEventListener("mouseover", mouseOver);
 
@@ -129,9 +128,7 @@ holderDetailsImg.forEach(function (holderDetailsImg) {
         coverGradient.classList.remove('d-none');
         infoImg.classList.remove('d-none');
     }
-
     holderDetailsImg.addEventListener("mouseout", mouseout);
-
     function mouseout() {
         let coverGradient = this.querySelector('.coverGradient')
         let infoImg = this.querySelector('.infoImg')
@@ -139,6 +136,59 @@ holderDetailsImg.forEach(function (holderDetailsImg) {
         infoImg.classList.add('d-none');
     }
 })
+
+
+let circleLike = document.querySelectorAll(".badgesLike")
+circleLike.forEach(function (circleLike){
+
+    circleLike.addEventListener("onclick", likeAndDislike);
+    function likeAndDislike(){
+        console.log("circleLike")
+
+        let circleLike = this.querySelector('.circleLike')
+        if(circleLike.hasClass('.fa-heart-o')){
+            circleLike.classList.add('.fa-heart')
+        }
+    }
+})
+//like and dislike
+// let badgesLike = document.querySelectorAll(".badgesLike")
+// // let faheart = document.querySelectorAll(".fa-heart")
+//
+// badgesLike.forEach(function (fahearto){
+//     fahearto.addEventListener("onclick",likeheart)
+//     // console.log(fahearto)
+//     // console.log(faheart)
+//
+//     function likeheart(){
+//         let fahearto = this.querySelector(".fa-heart-o")
+//         let faheart = this.querySelector(".fa-heart")
+//
+//         faheart.toggleClass.remove('d-none');
+//         fahearto.toggleClass.add('d-none');
+//     }
+// })
+
+
+//
+// let fahearto = document.querySelector(".fa-heart-o")
+// let faheart = document.querySelector(".fa-heart")
+//
+// document.querySelector('.fa-heart-o').addEventListener('click', likeheart)
+// function likeheart() {
+//         faheart.classList.remove('d-none');
+//          fahearto.classList.add('d-none');
+// }
+// document.querySelector('.fa-heart').addEventListener('click', dislikeheart)
+// function dislikeheart() {
+//     fahearto.classList.remove('d-none');
+//     faheart.classList.add('d-none');
+// }
+//
+
+
+
+
 
 //counter
 let scrollCounter = 1000;
@@ -206,26 +256,6 @@ window.addEventListener("scroll", function () {
     }
 })
 
-
-
-
-
-
-//like and dislike
-let fahearto = document.querySelector(".fa-heart-o")
-let faheart = document.querySelector(".fa-heart")
-
-document.querySelector('.fa-heart-o').addEventListener('click', likeheart)
-function likeheart() {
-        faheart.classList.remove('d-none');
-         fahearto.classList.add('d-none');
-}
-
-document.querySelector('.fa-heart').addEventListener('click', dislikeheart)
-function dislikeheart() {
-    fahearto.classList.remove('d-none');
-    faheart.classList.add('d-none');
-}
 
 
 

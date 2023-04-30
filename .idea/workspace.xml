@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37dc5424-306e-4d9f-a086-aaeb28460eb7" name="Changes" comment="add js newsletter counter place,&#10;add html and css footer">
-      <change afterPath="$PROJECT_DIR$/img/leader.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/leader1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/leader2.jpg" afterDir="false" />
+    <list default="true" id="37dc5424-306e-4d9f-a086-aaeb28460eb7" name="Changes" comment="add js and css for improve hpme page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -75,7 +72,8 @@
       <workItem from="1681376414227" duration="14056000" />
       <workItem from="1681395874695" duration="15138000" />
       <workItem from="1681420111928" duration="13561000" />
-      <workItem from="1682191462341" duration="30355000" />
+      <workItem from="1682191462341" duration="30783000" />
+      <workItem from="1682875254798" duration="6991000" />
     </task>
     <task id="LOCAL-00001" summary="add banner and search box html, css and js">
       <created>1680461191328</created>
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682282968606</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add js and css for improve hpme page">
+      <created>1682713930680</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682713930680</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +163,8 @@
     <MESSAGE value="add html, css &amp; js to counter banner scope&#10;add js to cart place (hover - info)" />
     <MESSAGE value="add html and css newsletter place" />
     <MESSAGE value="add js newsletter counter place,&#10;add html and css footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add js newsletter counter place,&#10;add html and css footer" />
+    <MESSAGE value="add js and css for improve hpme page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add js and css for improve hpme page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
