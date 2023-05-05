@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37dc5424-306e-4d9f-a086-aaeb28460eb7" name="Changes" comment="add js and css for improve hpme page">
+    <list default="true" id="37dc5424-306e-4d9f-a086-aaeb28460eb7" name="Changes" comment="add js like and dislike">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom.js" afterDir="false" />
     </list>
@@ -73,7 +72,7 @@
       <workItem from="1681395874695" duration="15138000" />
       <workItem from="1681420111928" duration="13561000" />
       <workItem from="1682191462341" duration="30783000" />
-      <workItem from="1682875254798" duration="6991000" />
+      <workItem from="1682875254798" duration="10714000" />
     </task>
     <task id="LOCAL-00001" summary="add banner and search box html, css and js">
       <created>1680461191328</created>
@@ -138,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682713930680</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add js like and dislike">
+      <created>1682883674542</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682883674542</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +170,8 @@
     <MESSAGE value="add html and css newsletter place" />
     <MESSAGE value="add js newsletter counter place,&#10;add html and css footer" />
     <MESSAGE value="add js and css for improve hpme page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add js and css for improve hpme page" />
+    <MESSAGE value="add js like and dislike" />
+    <option name="LAST_COMMIT_MESSAGE" value="add js like and dislike" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

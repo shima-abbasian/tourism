@@ -137,58 +137,15 @@ holderDetailsImg.forEach(function (holderDetailsImg) {
     }
 })
 
-
-let circleLike = document.querySelectorAll(".badgesLike")
-circleLike.forEach(function (circleLike){
-
-    circleLike.addEventListener("onclick", likeAndDislike);
-    function likeAndDislike(){
-        console.log("circleLike")
-
-        let circleLike = this.querySelector('.circleLike')
-        if(circleLike.hasClass('.fa-heart-o')){
-            circleLike.classList.add('.fa-heart')
-        }
-    }
-})
 //like and dislike
-// let badgesLike = document.querySelectorAll(".badgesLike")
-// // let faheart = document.querySelectorAll(".fa-heart")
-//
-// badgesLike.forEach(function (fahearto){
-//     fahearto.addEventListener("onclick",likeheart)
-//     // console.log(fahearto)
-//     // console.log(faheart)
-//
-//     function likeheart(){
-//         let fahearto = this.querySelector(".fa-heart-o")
-//         let faheart = this.querySelector(".fa-heart")
-//
-//         faheart.toggleClass.remove('d-none');
-//         fahearto.toggleClass.add('d-none');
-//     }
-// })
-
-
-//
-// let fahearto = document.querySelector(".fa-heart-o")
-// let faheart = document.querySelector(".fa-heart")
-//
-// document.querySelector('.fa-heart-o').addEventListener('click', likeheart)
-// function likeheart() {
-//         faheart.classList.remove('d-none');
-//          fahearto.classList.add('d-none');
-// }
-// document.querySelector('.fa-heart').addEventListener('click', dislikeheart)
-// function dislikeheart() {
-//     fahearto.classList.remove('d-none');
-//     faheart.classList.add('d-none');
-// }
-//
-
-
-
-
+$('.badgesLike').click(function (){
+    var badgeslike = $(this).find('i')
+    if(badgeslike.hasClass('fa-heart-o')){
+        badgeslike.removeClass('fa-heart-o').addClass('fa-heart');
+    }else {
+        badgeslike.removeClass('fa-heart').addClass('fa-heart-o')
+    }
+});
 
 //counter
 let scrollCounter = 1000;
@@ -256,24 +213,3 @@ window.addEventListener("scroll", function () {
     }
 })
 
-
-
-
-//
-// let fahearto = document.querySelectorAll(".fa-heart-o")
-// fahearto.forEach(function (fahearto){
-//     fahearto.addEventListener("click", likeheart)
-//     function likeheart() {
-//         faheart.classList.remove('d-none');
-//         fahearto.classList.add('d-none');
-//     }
-// })
-//
-// let faheart = document.querySelector(".fa-heart")
-// fahearto.forEach(function (faheart){
-//     faheart.addEventListener("click", dislikeheart)
-//     function dislikeheart() {
-//         fahearto.classList.remove('d-none');
-//         faheart.classList.add('d-none');
-//     }
-// })
